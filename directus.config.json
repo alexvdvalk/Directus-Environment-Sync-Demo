@@ -12,5 +12,10 @@
         "type": "token"
       }
     }
+  },
+  "projects": {
+    "default": {
+      "mode": "merge"
+    }
   }
 }

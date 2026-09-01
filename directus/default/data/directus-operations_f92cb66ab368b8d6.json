@@ -1,5 +1,25 @@
 {
   "collection": "directus_operations",
   "primaryKey": "id",
-  "records": []
+  "records": [
+    {
+      "flow": "14b36f77-ffc8-482c-bdaf-7050ab9dd717",
+      "id": "584ebbe6-23da-4623-8387-c1a84587a5af",
+      "key": "item_read_g9j2l",
+      "name": "Read Data",
+      "options": {
+        "collection": "news",
+        "emitEvents": false,
+        "key": [
+          "{{$trigger.key}}"
+        ],
+        "permissions": "$trigger"
+      },
+      "position_x": 19,
+      "position_y": 1,
+      "reject": null,
+      "resolve": null,
+      "type": "item-read"
+    }
+  ]
 }

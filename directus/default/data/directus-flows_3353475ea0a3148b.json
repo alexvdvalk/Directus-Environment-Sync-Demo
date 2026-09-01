@@ -1,5 +1,26 @@
 {
   "collection": "directus_flows",
   "primaryKey": "id",
-  "records": []
+  "records": [
+    {
+      "accountability": "all",
+      "color": null,
+      "description": null,
+      "icon": "bolt",
+      "id": "14b36f77-ffc8-482c-bdaf-7050ab9dd717",
+      "name": "on new news",
+      "operation": "584ebbe6-23da-4623-8387-c1a84587a5af",
+      "options": {
+        "collections": [
+          "news"
+        ],
+        "scope": [
+          "items.create"
+        ],
+        "type": "action"
+      },
+      "status": "active",
+      "trigger": "event"
+    }
+  ]
 }
