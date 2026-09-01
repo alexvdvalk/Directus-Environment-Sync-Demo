@@ -1,0 +1,13 @@
+{
+  "collection": "directus_roles",
+  "primaryKey": "id",
+  "records": [
+    {
+      "description": "$t:admin_description",
+      "icon": "verified",
+      "id": "413f368f-9b96-48c6-be3f-fbdfb07de2ff",
+      "name": "Administrator",
+      "parent": null
+    }
+  ]
+}

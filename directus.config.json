@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "source": {
+      "url": "http://localhost:8055",
+      "auth": {
+        "type": "token"
+      }
+    },
+    "target": {
+      "url": "http://localhost:8056",
+      "auth": {
+        "type": "token"
+      }
+    }
+  }
+}

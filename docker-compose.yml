@@ -1,0 +1,60 @@
+services:
+  source-db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: "directus"
+      POSTGRES_PASSWORD: "directus"
+      POSTGRES_DB: "directus"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U directus"]
+      interval: 5s
+      retries: 12
+
+  source:
+    image: directus/directus:latest
+    ports:
+      - 8055:8055
+    environment:
+      SECRET: "quickstart-source-secret"
+      DB_CLIENT: "pg"
+      DB_HOST: "source-db"
+      DB_PORT: "5432"
+      DB_DATABASE: "directus"
+      DB_USER: "directus"
+      DB_PASSWORD: "directus"
+      ADMIN_EMAIL: "admin@example.com"
+      ADMIN_PASSWORD: "quickstart"
+      ADMIN_TOKEN: "source-token"
+    depends_on:
+      source-db:
+        condition: service_healthy
+
+  target-db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: "directus"
+      POSTGRES_PASSWORD: "directus"
+      POSTGRES_DB: "directus"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U directus"]
+      interval: 5s
+      retries: 12
+
+  target:
+    image: directus/directus:latest
+    ports:
+      - 8056:8055
+    environment:
+      SECRET: "quickstart-target-secret"
+      DB_CLIENT: "pg"
+      DB_HOST: "target-db"
+      DB_PORT: "5432"
+      DB_DATABASE: "directus"
+      DB_USER: "directus"
+      DB_PASSWORD: "directus"
+      ADMIN_EMAIL: "admin@example.com"
+      ADMIN_PASSWORD: "quickstart"
+      ADMIN_TOKEN: "target-token"
+    depends_on:
+      target-db:
+        condition: service_healthy
