@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "extract-from-source": "d6s sync pull --from source"
+    "extract-from-source": "d6s sync pull --from source",
+    "diff": "d6s sync diff --to target",
+    "apply-only-news-collection": "d6s sync push --to target --collections news",
+    "sync-with-deletes": "d6s sync push --to target --mode mirror",
+    "sync-only-flows": "d6s sync push --to target --flows"
   },
   "keywords": [],
   "author": "",

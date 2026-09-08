@@ -4,6 +4,20 @@
   "records": [
     {
       "flow": "14b36f77-ffc8-482c-bdaf-7050ab9dd717",
+      "id": "18a8728d-f6bb-43b9-89c1-a533791f7bcf",
+      "key": "exec_eje38",
+      "name": "Run Script",
+      "options": {
+        "code": "module.exports = async function(data) {\n\t// Do something...\n\treturn {};\n}"
+      },
+      "position_x": 37,
+      "position_y": 1,
+      "reject": null,
+      "resolve": null,
+      "type": "exec"
+    },
+    {
+      "flow": "14b36f77-ffc8-482c-bdaf-7050ab9dd717",
       "id": "584ebbe6-23da-4623-8387-c1a84587a5af",
       "key": "item_read_g9j2l",
       "name": "Read Data",
@@ -11,14 +25,15 @@
         "collection": "news",
         "emitEvents": false,
         "key": [
-          "{{$trigger.key}}"
+          "{{$trigger.key}}",
+          "1232132"
         ],
         "permissions": "$trigger"
       },
       "position_x": 19,
       "position_y": 1,
       "reject": null,
-      "resolve": null,
+      "resolve": "18a8728d-f6bb-43b9-89c1-a533791f7bcf",
       "type": "item-read"
     }
   ]

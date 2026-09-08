@@ -3,6 +3,13 @@
   "primaryKey": "id",
   "records": [
     {
+      "description": null,
+      "icon": "supervised_user_circle",
+      "id": "31d06ba5-e384-415e-bc91-86eec34bcc40",
+      "name": "New Role",
+      "parent": null
+    },
+    {
       "description": "$t:admin_description",
       "icon": "verified",
       "id": "413f368f-9b96-48c6-be3f-fbdfb07de2ff",

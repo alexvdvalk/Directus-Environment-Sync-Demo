@@ -3,6 +3,16 @@
   "primaryKey": "id",
   "records": [
     {
+      "admin_access": false,
+      "app_access": false,
+      "description": null,
+      "enforce_tfa": false,
+      "icon": "badge",
+      "id": "79533230-6be3-405c-8c1e-b699bf0d5168",
+      "ip_access": null,
+      "name": "Demo"
+    },
+    {
       "admin_access": true,
       "app_access": true,
       "description": "$t:admin_description",

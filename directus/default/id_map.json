@@ -7,6 +7,13 @@
           "c78cecf4-cd98-4390-9f9e-9b34924fe35d": "32ef3a8a-0c92-4909-94bf-9beb7f1e9679",
           "e542f621-e011-499c-a5b5-f1f540f2a810": "ce07d05f-3587-41ec-a457-1a9b11406b42"
         },
+        "directus_flows": {
+          "14b36f77-ffc8-482c-bdaf-7050ab9dd717": "14b36f77-ffc8-482c-bdaf-7050ab9dd717"
+        },
+        "directus_operations": {
+          "18a8728d-f6bb-43b9-89c1-a533791f7bcf": "18a8728d-f6bb-43b9-89c1-a533791f7bcf",
+          "584ebbe6-23da-4623-8387-c1a84587a5af": "584ebbe6-23da-4623-8387-c1a84587a5af"
+        },
         "directus_policies": {
           "9041d1c8-d213-4f18-9494-545f0ba6fe9f": "e32a95c3-73b4-414c-a4fe-a1124a5dd630",
           "abf8a154-5b1c-4a46-ac9c-7300570f4f17": "abf8a154-5b1c-4a46-ac9c-7300570f4f17"

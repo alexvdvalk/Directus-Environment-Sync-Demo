@@ -1,5 +1,30 @@
 {
   "collection": "directus_permissions",
   "primaryKey": "id",
-  "records": []
+  "records": [
+    {
+      "action": "read",
+      "collection": "news",
+      "fields": [
+        "*"
+      ],
+      "id": 1,
+      "permissions": null,
+      "policy": "79533230-6be3-405c-8c1e-b699bf0d5168",
+      "presets": null,
+      "validation": null
+    },
+    {
+      "action": "update",
+      "collection": "news",
+      "fields": [
+        "*"
+      ],
+      "id": 2,
+      "permissions": null,
+      "policy": "79533230-6be3-405c-8c1e-b699bf0d5168",
+      "presets": null,
+      "validation": null
+    }
+  ]
 }
