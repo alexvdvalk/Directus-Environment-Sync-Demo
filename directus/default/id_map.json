@@ -4,21 +4,30 @@
     "http://localhost:8055": {
       "http://localhost:8056": {
         "directus_access": {
+          "919e215d-841c-4d46-8459-a64dd0bf01bc": "919e215d-841c-4d46-8459-a64dd0bf01bc",
           "c78cecf4-cd98-4390-9f9e-9b34924fe35d": "32ef3a8a-0c92-4909-94bf-9beb7f1e9679",
           "e542f621-e011-499c-a5b5-f1f540f2a810": "ce07d05f-3587-41ec-a457-1a9b11406b42"
         },
         "directus_flows": {
-          "14b36f77-ffc8-482c-bdaf-7050ab9dd717": "14b36f77-ffc8-482c-bdaf-7050ab9dd717"
+          "14b36f77-ffc8-482c-bdaf-7050ab9dd717": "14b36f77-ffc8-482c-bdaf-7050ab9dd717",
+          "5094318e-757c-4096-8ed1-2d45568abac2": "5094318e-757c-4096-8ed1-2d45568abac2"
         },
         "directus_operations": {
           "18a8728d-f6bb-43b9-89c1-a533791f7bcf": "18a8728d-f6bb-43b9-89c1-a533791f7bcf",
+          "2b031d7b-dd5b-479a-b4ad-7b199150a093": "2b031d7b-dd5b-479a-b4ad-7b199150a093",
           "584ebbe6-23da-4623-8387-c1a84587a5af": "584ebbe6-23da-4623-8387-c1a84587a5af"
         },
+        "directus_permissions": {
+          "1": "3",
+          "2": "4"
+        },
         "directus_policies": {
+          "79533230-6be3-405c-8c1e-b699bf0d5168": "79533230-6be3-405c-8c1e-b699bf0d5168",
           "9041d1c8-d213-4f18-9494-545f0ba6fe9f": "e32a95c3-73b4-414c-a4fe-a1124a5dd630",
           "abf8a154-5b1c-4a46-ac9c-7300570f4f17": "abf8a154-5b1c-4a46-ac9c-7300570f4f17"
         },
         "directus_roles": {
+          "31d06ba5-e384-415e-bc91-86eec34bcc40": "31d06ba5-e384-415e-bc91-86eec34bcc40",
           "413f368f-9b96-48c6-be3f-fbdfb07de2ff": "2257da53-1561-4739-86a7-5091bde065b9"
         },
         "directus_settings": {

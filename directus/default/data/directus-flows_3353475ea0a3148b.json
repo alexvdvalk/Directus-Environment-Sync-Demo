@@ -21,6 +21,18 @@
       },
       "status": "active",
       "trigger": "event"
+    },
+    {
+      "accountability": "all",
+      "color": null,
+      "description": null,
+      "icon": "bolt",
+      "id": "5094318e-757c-4096-8ed1-2d45568abac2",
+      "name": "asdsa",
+      "operation": "2b031d7b-dd5b-479a-b4ad-7b199150a093",
+      "options": {},
+      "status": "active",
+      "trigger": "webhook"
     }
   ]
 }

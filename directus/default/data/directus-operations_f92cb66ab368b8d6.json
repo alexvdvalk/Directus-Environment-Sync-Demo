@@ -17,6 +17,26 @@
       "type": "exec"
     },
     {
+      "flow": "5094318e-757c-4096-8ed1-2d45568abac2",
+      "id": "2b031d7b-dd5b-479a-b4ad-7b199150a093",
+      "key": "condition_ft32w",
+      "name": "Condition",
+      "options": {
+        "filter": {
+          "$trigger": {
+            "category": {
+              "_eq": "Example"
+            }
+          }
+        }
+      },
+      "position_x": 19,
+      "position_y": 1,
+      "reject": null,
+      "resolve": null,
+      "type": "condition"
+    },
+    {
       "flow": "14b36f77-ffc8-482c-bdaf-7050ab9dd717",
       "id": "584ebbe6-23da-4623-8387-c1a84587a5af",
       "key": "item_read_g9j2l",
