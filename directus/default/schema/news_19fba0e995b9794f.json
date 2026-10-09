@@ -48,7 +48,7 @@
         "readonly": false,
         "required": false,
         "searchable": true,
-        "sort": 7,
+        "sort": 4,
         "special": null,
         "translations": null,
         "validation": null,
@@ -142,7 +142,7 @@
         "readonly": true,
         "required": false,
         "searchable": true,
-        "sort": 5,
+        "sort": 6,
         "special": [
           "date-updated"
         ],
@@ -219,32 +219,32 @@
     },
     {
       "collection": "news",
-      "field": "legacy_ckeditor_data",
+      "field": "processed",
       "meta": {
         "collection": "news",
         "conditions": null,
         "display": null,
         "display_options": null,
-        "field": "legacy_ckeditor_data",
+        "field": "processed",
         "group": null,
         "hidden": false,
-        "interface": "input-code",
+        "interface": "boolean",
         "note": null,
-        "options": {
-          "language": "htmlmixed"
-        },
+        "options": null,
         "readonly": false,
         "required": false,
         "searchable": true,
-        "sort": 9,
-        "special": null,
+        "sort": 8,
+        "special": [
+          "cast-boolean"
+        ],
         "translations": null,
         "validation": null,
         "validation_message": null,
         "width": "full"
       },
       "schema": {
-        "data_type": "text",
+        "data_type": "boolean",
         "default_value": null,
         "foreign_key_column": null,
         "foreign_key_table": null,
@@ -256,12 +256,12 @@
         "is_primary_key": false,
         "is_unique": false,
         "max_length": null,
-        "name": "legacy_ckeditor_data",
+        "name": "processed",
         "numeric_precision": null,
         "numeric_scale": null,
         "table": "news"
       },
-      "type": "text"
+      "type": "boolean"
     },
     {
       "collection": "news",
@@ -324,7 +324,7 @@
         "readonly": false,
         "required": false,
         "searchable": true,
-        "sort": 8,
+        "sort": 9,
         "special": [
           "cast-boolean"
         ],
@@ -370,7 +370,7 @@
         "readonly": false,
         "required": false,
         "searchable": true,
-        "sort": 6,
+        "sort": 7,
         "special": null,
         "translations": null,
         "validation": null,
@@ -396,6 +396,54 @@
         "table": "news"
       },
       "type": "string"
+    },
+    {
+      "collection": "news",
+      "field": "type",
+      "meta": {
+        "collection": "news",
+        "conditions": null,
+        "display": null,
+        "display_options": null,
+        "field": "type",
+        "group": null,
+        "hidden": false,
+        "interface": "select-dropdown-m2o",
+        "note": null,
+        "options": {
+          "template": "{{label}}"
+        },
+        "readonly": false,
+        "required": false,
+        "searchable": true,
+        "sort": 11,
+        "special": [
+          "m2o"
+        ],
+        "translations": null,
+        "validation": null,
+        "validation_message": null,
+        "width": "full"
+      },
+      "schema": {
+        "data_type": "uuid",
+        "default_value": null,
+        "foreign_key_column": "id",
+        "foreign_key_table": "news_types",
+        "generation_expression": null,
+        "has_auto_increment": false,
+        "is_generated": false,
+        "is_indexed": false,
+        "is_nullable": true,
+        "is_primary_key": false,
+        "is_unique": false,
+        "max_length": null,
+        "name": "type",
+        "numeric_precision": null,
+        "numeric_scale": null,
+        "table": "news"
+      },
+      "type": "uuid"
     },
     {
       "collection": "news",
@@ -464,7 +512,7 @@
         "readonly": true,
         "required": false,
         "searchable": true,
-        "sort": 4,
+        "sort": 5,
         "special": [
           "user-updated"
         ],
@@ -495,6 +543,31 @@
     }
   ],
   "relations": [
+    {
+      "collection": "news",
+      "field": "type",
+      "meta": {
+        "junction_field": null,
+        "many_collection": "news",
+        "many_field": "type",
+        "one_allowed_collections": null,
+        "one_collection": "news_types",
+        "one_collection_field": null,
+        "one_deselect_action": "nullify",
+        "one_field": null,
+        "sort_field": null
+      },
+      "related_collection": "news_types",
+      "schema": {
+        "column": "type",
+        "constraint_name": "news_type_foreign",
+        "foreign_key_column": "id",
+        "foreign_key_table": "news_types",
+        "on_delete": "SET NULL",
+        "on_update": "NO ACTION",
+        "table": "news"
+      }
+    },
     {
       "collection": "news",
       "field": "user_created",

@@ -25,6 +25,30 @@
       "policy": "79533230-6be3-405c-8c1e-b699bf0d5168",
       "presets": null,
       "validation": null
+    },
+    {
+      "action": "read",
+      "collection": "directus_shares",
+      "fields": [
+        "*"
+      ],
+      "id": 3,
+      "permissions": null,
+      "policy": "79533230-6be3-405c-8c1e-b699bf0d5168",
+      "presets": null,
+      "validation": null
+    },
+    {
+      "action": "read",
+      "collection": "directus_translations",
+      "fields": [
+        "*"
+      ],
+      "id": 4,
+      "permissions": null,
+      "policy": "79533230-6be3-405c-8c1e-b699bf0d5168",
+      "presets": null,
+      "validation": null
     }
   ]
 }
